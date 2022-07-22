@@ -8,15 +8,15 @@ initializeApp( {
 
 const db = getFirestore()
 
-// const car2 = ({ make: 'Ferrari', model: 'GTO', year: 2008, color: 'red'})
+// const car3 = ({ make: 'Audi', model: 'A3', year: 2018, color: 'grey'})
 
 // db.collection('cars')
-//   .add(car2)
+//   .add(car3)
 //   .then (doc => {
 //     console.log('Doc added:', doc.id)
 // })
 //   .catch(err => console.error(err))
-  //console.log()
+//   console.log()
 
 // db.collection ('cars').doc('lambo')
 //   .set({ make: 'Lamborghini', model: 'Diablo', year: 2020, color: 'yellow'})
@@ -52,4 +52,3 @@ db.collection('cars').get()
         console.log(cars)
       })
       .catch(console.error)
-//.where('color')
