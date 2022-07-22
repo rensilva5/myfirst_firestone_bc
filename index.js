@@ -8,6 +8,11 @@ initializeApp( {
 
 const db = getFirestore()
 
-const car = { make: 'Audi', model: 'A3', year: 2018, color: 'grey'}
+const car = { make: 'Ferrari', model: 'GTO', year: 2008, color: 'red'}
 
 db.collection('car').add(car)
+.then() doc => {
+    console.log('Doc added: ' doc.id)
+}
+.catch(err => console.error(err))
+console.log()
